@@ -1,0 +1,3 @@
+Git permite guardar y compartir los cambios realizados en un proyecto. Primero se revisan los cambios con git status. Luego se agregan los archivos modificados con git add .. Después se guardan los cambios en el repositorio local usando git commit con un mensaje que describa lo realizado.
+
+Antes de subir los cambios es recomendable actualizar el proyecto con git pull para obtener las últimas modificaciones. Finalmente, se envían los cambios al repositorio remoto utilizando git push. 

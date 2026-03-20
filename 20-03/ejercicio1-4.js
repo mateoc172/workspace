@@ -1,0 +1,10 @@
+let precio = "350";
+let num = Number(precio);
+console.log("numero:");
+console.log(num);
+let suma = num + 100;
+console.log("suma:");
+console.log(suma);
+let textofinal = suma.toString()+ " pesos colombianos";
+console.log("resultados:");
+console.log(textofinal);

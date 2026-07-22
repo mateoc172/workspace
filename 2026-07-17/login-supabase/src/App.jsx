@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { supabase, supabaseConfigMessage } from './supabaseClient'
 import Login from './Login'
+import Productos from './Productos'
 import './App.css'
 
 function App() {
@@ -48,9 +49,14 @@ function App() {
 
   return (
     <div className="app-shell">
-      <h2>Bienvenido, {session.user.email}</h2>
-      <p>Tu sesión está activa con Supabase.</p>
-      <button onClick={handleLogout}>Cerrar sesión</button>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+        <div>
+          <h2>Bienvenido, {session.user.email}</h2>
+          <p>Tu sesión está activa con Supabase.</p>
+        </div>
+        <button onClick={handleLogout}>Cerrar sesión</button>
+      </div>
+      <Productos session={session} />
     </div>
   )
 }
